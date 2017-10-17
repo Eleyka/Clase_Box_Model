@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML anidado</title>  <!-- título de nuestro archivo-->
+     <!-- ELementos link-->
+    <link rel="stylesheet" href="css/style.css" >  <!-- Incluyendo una hoja de estilo-->
+    <link href="default.css" rel="stylesheet" title="Default Style">  <!-- Hojas de estilos alternativas-->
+    <link href="fancy.css" rel="alternate stylesheet" title="Fancy">
+    <link href="basic.css" rel="alternate stylesheet" title="Basic">
+
+    <link rel="stylesheet" href="mystylesheet.css" onload="sheetLoaded()" onerror="sheetError()">
+</head>
+<body>
+    <h1>Laboratoria</h1>
+    <p>Código <em>que</em> <strong>transforma</strong></p>
+    <em>primero</em><strong>segundo</strong><em>tercero</em>
+    <p>cuarto</p><p>quinto</p><p>sexto</p>
+    <!-- ELementos de html5-->
+    <h1>Encabezado de la página web</h1>   <!-- Encabezado principal -->
+    <h2>Subtítulos de contenido  </h2>
+    <h3>Sub título 2</h3>
+    <h4>Sub título 3</h4>
+    <h5>Sub título 4</h5>
+    <h6>Sub título 5</h6>
+
+    <table>tabla</table> <!-- Es Obsoleto, debe ser estilizado usando css _____atributos de table :align, 
+    bgcolor, border, cellpadding (espacio entre el contenido de una celda, cellspacing, frame) -->
+    <!-- Simple table -->
+    <table>
+        <tr>
+        <td>John</td>
+        <td>Doe</td>
+        </tr>
+        <tr>
+        <td>Jane</td>
+        <td>Doe</td>
+        </tr>
+    </table>
+
+    <!-- Simple table with header -->
+    <table>
+            <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            </tr>
+            <tr>
+            <td>John</td>
+            <td>Doe</td>
+            </tr>
+            <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            </tr>
+    </table>
+
+    <!-- Table with thead, tfoot, and tbody -->
+    <table>
+        <thead>
+          <tr>
+            <th>Header content 1</th>
+            <th>Header content 2</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>Body content 1</td>
+            <td>Body content 2</td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer content 1</td>
+                <td>Footer content 2</td>
+            </tr>
+            </tfoot>
+     </table>
+
+     <!-- Table with colgroup -->
+    <table>
+        <colgroup span="4" class="columns"></colgroup>
+        <tr>
+          <th>Countries</th>
+          <th>Capitals</th>
+          <th>Population</th>
+          <th>Language</th>
+        </tr>
+        <tr>
+          <td>USA</td>
+          <td>Washington D.C.</td>
+          <td>309 million</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>Sweden</td>
+          <td>Stockholm</td>
+          <td>9 million</td>
+          <td>Swedish</td>
+        </tr>
+      </table>
+      <!-- Table with colgroup and col -->
+    <table>
+        <colgroup>
+          <col class="column1">
+          <col class="columns2plus3" span="2">
+        </colgroup>
+        <tr>
+          <th>Lime</th>
+          <th>Lemon</th>
+          <th>Orange</th>
+        </tr>
+        <tr>
+          <td>Green</td>
+          <td>Yellow</td>
+          <td>Orange</td>
+        </tr>
+      </table>
+      
+      <!-- Simple table with caption -->
+      <table>
+        <caption>Awesome caption</caption>
+        <tr>
+          <td>Awesome data</td>
+        </tr>
+    </table>
+    <!-- elemento lista genera: crea una caja ne bloque -->
+    <ul>
+            <li>punto uno</li>
+            <li>punto dos</li>
+            <li>punto tres</li>
+           </ul>
+
+                <!-- imagen -->      
+    <img src="assets/docs/mdn-logo-sm.png" alt="MDN">
+    <a href="https://developer.mozilla.org/"><img src="assets/docs/mdn-logo-sm.png" alt="MDN"></a>
+    <img src="assets/docs/mdn-logo-sm.png" 
+    alt="MDN" 
+    srcset="mdn-logo-HD.png 2x">
+
+    <img src="clock-demo-thumb-200.png" 
+    alt="Clock" 
+    srcset="clock-demo-thumb-200.png 200w, clock-demo-thumb-400.png 400w"
+    sizes="(min-width: 600px) 200px, 50vw">
+
+    <br><img src="http://cde.2.trome.pe/ima/0/1/1/8/5/1185397.jpg">
+
+    <!-- línea divisoria -->   
+    <hr>
+    <hr color="blue" size=3>
+    <hr color="green" size=1 width="150">
+
+    <p style="color:red; background-color: yellow; border: 1px solid black;">Código <em>que</em> <strong>transforma</strong></p>
+    
+    <nav>
+            
+            <ul>
+            
+            <li><a href="DireccionPagina"> Item de Navegación 1 </li>
+            
+            <li><a href="DireccionPagina"> Item de Navegación 2 </li>
+            
+            <li><a href="DireccionPagina"> Item de Navegación Etc </li>
+            
+            </ul>
+            
+    </nav>
+<script type="text/javascript" src="js/app.js">
+function sheetLoaded() {
+  // Hacer algo interesante; la hoja de estilos ha sido cargada
+}
+
+function sheetError() {
+  alert("¡Ocurrió un error al cargar la hoja de estilos!");
+}
+
+
+</script>
+</body>
+</html>
+ <!-- atributo: nos da inf. adicional sobre el contenido -->   
+ <!--header.....ENCABEZADO
+        <nav>.... CREA UN MENU DE NAVEGACIÓN
+        <main>...MENU
+        <aside>..PUBLICIDAD
+        <article>...CAMBIO DE CONTENIDO
+        <section>...SECCIONES MAS GRANDES
+        <footer>.....PIE DE PAGINA-->
